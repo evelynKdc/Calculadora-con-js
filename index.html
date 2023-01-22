@@ -10,37 +10,40 @@
 </head>
 <body>
     <div class="container">
-       <div class="screen">
-            <p class="buffer">.</p>
+       <div id="recent" class="screen">
+            <p  class="recent">.</p>
             <p class="actual-number">0</p>
        </div>
        <div class="buttons-container">
-         <button>%</button>
-         <button>x <sup>3</sup></button>
-         <button>C</button>
-         <button><img src="./delete.svg" alt="deleteAll"> <span class="no-p">M</span></button>
-         <button>1/x</button>
-         <button>x <sup>2</sup></button>
-         <button>√x</button>
-         <button>÷</button>
-         <button>7</button>
-         <button>8</button>
-         <button>9</button>
-         <button>x</button>
-         <button>4</button>
-         <button>5</button>
-         <button>6</button>
-         <button>-</button>
-         <button>1</button>
-         <button>2</button>
-         <button>3</button>
-         <button>+</button>
-         <button>.</button>
-         <button>0</button>
-         <button class="equal-button">=</button>
+         <button class="operator" value="%">%</button>
+         <button class="pow3" value="^3">x <sup>3</sup></button>
+         <button class="clearAll" value="clearAll">C</button>
+         <button class="clear" value="c"><img src="./delete.svg" alt="deleteAll"> <span class="no-p">M</span></button>
+         <button class="openP" value="(">(</button>
+         <button class="closeP" value=")">)</button>
+         <button class="squirt" value="√x">√x</button>
+         <button class="operator" value="/">÷</button>
+         <button class="number" value="7">7</button>
+         <button class="number" value="8">8</button>
+         <button class="number" value="9">9</button>
+         <button class="operator" value="*">x</button>
+         <button class="number" value="4">4</button>
+         <button class="number" value="5">5</button>
+         <button class="number" value="6">6</button>
+         <button class="operator" value="-">-</button>
+         <button class="number" value="1">1</button>
+         <button class="number" value="2">2</button>
+         <button class="number" value="3">3</button>
+         <button class="operator" value="+">+</button>
+         <button class="point" value=".">.</button>
+         <button class="number" value="0">0</button>
+         <button class="equal-button" value="=">=</button>
        </div>
             
             
     </div>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
