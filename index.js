@@ -1,6 +1,6 @@
 const buttons= document.querySelectorAll("button");
-let actualOperation = document.querySelector(".actual-number");
-let buffer = document.querySelector(".recent");
+const actualOperation = document.querySelector(".actual-number");
+const buffer = document.querySelector(".recent");
 
 buttons.forEach(x=>{
     //console.log(x.value);
@@ -12,35 +12,49 @@ buttons.forEach(x=>{
 
 
 function organizeInformation(information) {
-    if (actualOperation.innerHTML.toString() !== "0" && buffer.innerHTML.toString() !== ".") {
-        actualOperation.innerHTML=" ";
-        buffer.innerHTML=".";
-    }
+    // if (actualOperation.innerHTML.toString() !== "0" && buffer.innerHTML.toString() !== ".") {
+    //     actualOperation.innerHTML=" ";
+    //     buffer.innerHTML=".";
+    // }
 
     if (buffer.innerHTML.toString() == "." && actualOperation.innerHTML.toString() == "0") {
+        buffer.innerHTML=".";
         actualOperation.innerHTML= " "; 
     }
 
-    actualOperation.innerHTML+= information; 
+     
     
     if (information == '=') {
-        //let calculado = actualOperation.innerHTML;
        
-        let total = eval(actualOperation.innerHTML.toString().slice(0,-1));
+        let total = eval(actualOperation.innerHTML.toString());
         
         buffer.innerHTML=actualOperation.innerHTML;
-        actualOperation.innerHTML= total;
+        
+        return actualOperation.innerHTML= total;
 
     }
+
+    actualOperation.innerHTML+= information;
+
     if (information == 'clearAll') {
        
         actualOperation.innerHTML="0";
         buffer.innerHTML=".";
 
     }
+
+    
+
     if (information == 'c') {
        
         actualOperation.innerHTML=actualOperation.innerHTML.toString().slice(0,-2);
+
+        if (actualOperation.innerHTML==" ") {
+            actualOperation.innerHTML="0";
+        }
         
     }
+
+
+    
 }
