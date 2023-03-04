@@ -1,15 +1,18 @@
-# Calculadora en js
+<h1 align="center">Calculadora en js</h1>
 
-Este proyecto esta desarrollado en javascript puro, donde podras realizar operaciones basicas de matemáticas.
-
-
-<img align="center" src="https://img.shields.io/badge/Status-EN%20PROCESO-yellow" alt="BADGEPROCESO">
+<p>Este proyecto esta desarrollado en javascript puro, donde podras realizar operaciones basicas de matemáticas.</p>
 
 ## Versión demo
 💻 [http://calculadora-cool.netlify.app/](http://calculadora-cool.netlify.app/ "http://calculadora-cool.netlify.app/")
 
+
 ## Tecnologias usadas
+
+<div align="center">
+
 ![image](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+</div>
 <h2>Portada</h2>
 <img width="100%" src="./portadaDesktopCalculadoraJs.png" alt="portada desktop del proyecto de calculadora">
 <h2>Autor</h2>
